@@ -1,0 +1,21 @@
+{
+  "name": "easttheme",
+  "homepage": "http://www.ccd3v.net/",
+  "authors": ["the-cc-dev <the.cc.dev@gmail.com>"],
+  "description": "theme for susaneast.com by ccd3v",
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "overrides": {
+    "jquery": {
+      "main": ["dist/jquery.js"]
+    }
+  }
+}

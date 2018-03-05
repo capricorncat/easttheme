@@ -1,0 +1,67 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.wh(@wid,@hei) {
+  width: @wid;
+  height: @hei;
+}
+.mp(@mar,@pad) {
+  margin: @mar;
+  padding: @pad;
+}
+.dp(@dis,@pos) {
+  display: @dis;
+  position: @pos;
+}
+.tl(@top,@lef) {
+  top: @top;
+  left: @lef;
+}
+.tr(@top,@rig) {
+  top: @top;
+  right: @rig;
+}
+.bl(@bot,@lef) {
+  bottom: @bot;
+  left: @lef;
+}
+.br(@bot,@rig) {
+  bottom: @bot;
+  right: @rig;
+}
+.zi(@val: 100) {
+	z-index: @val;
+}
+.fill(@dis: inline-block, @pos: fixed,
+	    @top: 0vh, 					@lef: 0vw, 
+			@wid: 100vw, 				@hei: 100vh, 
+			@mar: 0, 						@pad: 0) {
+	.dp(@dis,@pos);
+	.tl(@top,@lef);
+	.wh(@wid,@hei);
+	.mp(@mar,@pad);
+}
+.wlht(@w,@l,@h,@t) {
+  .wh(@w,@h);
+  .tl(@t,@l);
+}
+.wrhb(@w,@r,@h,@b) {
+  .wh(@w,@h);
+  .br(@b,@r);
+}

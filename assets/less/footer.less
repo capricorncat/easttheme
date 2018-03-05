@@ -1,0 +1,56 @@
+#footer {
+	position: fixed;
+	.wh(100vw,42px);
+	.zi(100);
+	bottom: 0;
+	background-color: @footerBgColor;
+	.column {
+		padding-left: 0px!important;
+		padding-right: 0px!important;
+		text-align: center;
+	}
+	&Copy {
+		padding-top: 11px!important;
+		vertical-align: middle!important;
+		font-size: @footerCopyFontSize;
+		color: @footerColor!important; 
+		.icon {
+			font-size: @copyIconFontSize;
+		}
+		.copytext {
+			font-family: @footerCopyFont; 
+			color: @footerColor!important; 
+		}
+	}
+	&Social {
+		padding: 4px 0!important;
+		a {
+		font-size: @footerSocialFontSize;
+			color: @socialColor; 
+			.circular {
+				background-color: @socialBgColor;
+			}
+		}
+		a:hover {
+			color: @socialHoverColor;
+		}
+	}
+	&Search {
+		padding: 4px!important;
+		.search.form {
+			.ui.mini.action.input {
+				input, button { border-color: @sbLinkColor; }
+				input { width: 80%; }
+				button { 
+					background-color: @sbLinkColor;
+					color: @sbColor;
+					width: 20%; 
+				}
+				.prompt {
+					.serif(8px);
+				}
+			}
+		}
+	}
+	&Sidebar {}
+}

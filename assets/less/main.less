@@ -1,0 +1,63 @@
+@import 'mixins.less';
+@import 'vars.less';
+@import 'defaults.less';
+
+html { 
+	body {
+		.fill()!important;
+		@import 'header.less';
+		#main {
+			min-height: 300px;
+			.zi(@pageZ);
+			padding-top: 42px!important;
+			padding-bottom: 10px;
+			#pageheader {
+				margin-bottom: 0!important;
+				top: 0!important;
+				width: 100%;
+				#pagetitle {
+					height: 100px;
+					.cursive(70px);
+					color: @secondaryColor;
+					text-align: center;
+				}
+				#posttitle {
+					margin: 0!important;
+					height: 100px;
+					.cursive(70px);
+					color: @secondaryColor;
+				}
+				#postmeta {
+					display: none!important;
+				}
+				.list {
+					//display: none!important;
+				}
+			}
+			#pagecontent { 
+				.serif(17px);
+				min-height: 260px;
+				padding-bottom: 50px;
+				img {
+					margin-bottom: 20px;
+					width: 100%;
+					height: auto;
+					border-radius: 5px!important;
+				}	
+				#postcontent {
+					.serif(17px);
+				}
+			}
+			//@import 'sidebar.less';
+			@media screen and (min-width: 768px) {
+				padding-top: 218px!important;
+			}
+		}
+		@import 'footer.less';
+	}
+	@media screen and (max-width: 767px) {
+		margin-top: 0!important;
+	}
+}
+
+

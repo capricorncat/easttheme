@@ -1,0 +1,31 @@
+{
+  "paths": {
+    "assets":   "assets/",
+    "dist":     "dist/"
+  },
+  "dependencies": {
+    "main.js": {
+      "files": [ "coffee/main.coffee" ]
+    },
+    "main.css": {
+      "files": [ "less/main.less" ]
+    },
+    "scripts.js": {
+      "bower":  ["jquery"],
+      "vendor": ["inc/semantic/dist/semantic.js"],
+      "files":  ["js/main.js"],
+      "main":   true
+    },
+    "styles.css": {
+      "vendor": ["inc/semantic/dist/semantic.css"],
+      "files":  ["css/main.css"],
+      "main":   true
+    }
+  },
+  "config": {
+    "devUrl": "http://localhost:8888/susaneast/",
+    "semantic": "inc/semantic/",
+    "bower":    "bower_components/",
+    "node":     "node_modules/"
+  }
+}

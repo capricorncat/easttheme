@@ -1,0 +1,8 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+.cache-loader
+dist
+node_modules
+npm-debug.log
+bower_components
+inc/semantic

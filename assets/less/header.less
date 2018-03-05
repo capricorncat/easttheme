@@ -1,0 +1,139 @@
+#header {
+	.zi(@headerZ);
+	.dp(inline-block,fixed);
+	.tl(0,0);
+	width: 100%;
+	background-color: @headerBgColor;
+	.column {
+		padding: 0!important;
+	}
+	&Mobile {
+		.accordion {
+			.title {
+				height: 42px!important;
+				padding: 5px;
+				span, i {
+					.dp(inline-block,relative);
+					color: @sbColor; 
+				}
+				span {
+					padding-top: 8px!important;
+					.cursive(40px);
+					float: left;
+				}
+				i {
+					
+					width: 10px;
+					padding-top: 3px!important;
+					font-size: 25px;
+					float: right;
+				}
+			}
+			.content {
+				padding-top: 0!important;
+				.items {
+					border-radius: 5px;
+					background-color: @sbBgColor;
+					.item { 
+						margin: 5px 0!important;
+						a { color: @sbColor; }  
+						h3 { display: none; }
+						.form {
+							.input { 
+								.prompt {
+								.serif(8px);
+								}
+							}
+						}
+						.execphpwidget { 
+							.items { 
+								.item {
+									.content {
+										.header {
+											padding: 5px;
+											color: @sbColor; 
+											font-family: @sbFont;
+										}
+									}
+								}
+							}
+							.ui.vertical.secondary.fluid.menu {
+								margin-right: 0px!important;
+								margin-left: 0px!important;
+								.item {
+									padding: 8px 5px;
+									font-family: @sbFont;
+									font-size: 18px;
+								}
+							} 
+						}
+						.search.form {
+							.ui.mini.action.input {
+								input, button { border-color: @sbLinkColor; }
+								input { width: 80%; }
+								button { 
+									background-color: @sbLinkColor;
+									color: @sbColor;
+									width: 20%; 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&Title {
+		.header {
+			color: @masttitleColor!important;
+			.cursive(50px);
+		}
+			@media (min-width: 768px) {
+				.header {
+					.cursive(90px);
+				height: 80px!important;
+				}
+			}
+	}
+	&Social {
+		a {
+			.icon {
+				color: @socialColor;
+			}
+			.circular {
+				background-color: @socialBgColor;
+			}
+		}
+		a:hover {
+			.icon {
+				color: @socialHoverColor;
+			}
+		}
+		@media (min-width: 768px) {
+			margin: 6px 0!important;
+		}
+	}
+	&SubTitle {
+		.header {
+			font-family: @subHeaderFont;
+			font-size: 25px;
+		}
+		@media (min-width: 768px) {
+			margin: 5px 0!important;
+		}
+	}
+	&Nav {
+		background-color: @headerNavBgColor;
+		.menu {
+			font-family: @menuFont;
+		background-color: @headerNavBgColor;
+			font-size: 20px;
+			.item {
+				padding: 0;
+				color: @lighterTeal!important;
+				
+			}
+		}
+	}
+}
+

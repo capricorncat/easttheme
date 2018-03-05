@@ -1,0 +1,56 @@
+#sidebar {
+		background-color: @sbBgColor;
+		.widget {
+			list-style: none;
+			height: auto;
+			margin-top:  12px!important;
+			a {
+				color: @sbColor; 
+			}  
+			h3 {
+				display: none;
+			}
+			.form {
+				.input {
+					width: 100%; 
+				}
+			}
+			.execphpwidget { 
+				.items { 
+					.item {
+						.content {
+							.header {
+								color: @sbColor; 
+								font-family: @sbFont;
+							}
+						}
+					}
+				}
+				.ui.vertical.secondary.fluid.menu {
+					margin-right: 0px!important;
+					margin-left: 0px!important;
+					.item {
+						padding: 8px 5px;
+						font-family: @sbFont;
+						font-size: 18px;
+					}
+				} 
+			}
+			.search.form {
+				.ui.mini.action.input {
+					input, button {
+						border-color: @sbLinkColor;
+					}
+					input { 
+						width: 80%; 
+					}
+					button { 
+						background-color: @sbLinkColor;
+						color: @sbColor;
+						width: 20%; 
+					}
+				}
+			}
+		}
+	
+}

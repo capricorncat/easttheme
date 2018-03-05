@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Cookie|Ledger');
+@font-face {
+	font-family: 	'Cookie';
+	src: 					url('../fonts/Cookie-Regular.ttf');
+}
+@cursive: 'Cookie', cursive;
+@deco: 		'Arima Madurai', serif;
+@serif: 	'Ledger', serif;
+
+.cursive(@fontsize: 15px) {
+	font-family: @cursive!important;
+	font-size: @fontsize!important;
+}
+.deco(@fontsize: 15px) {
+	font-family: @deco!important;
+	font-size: @fontsize!important;
+}
+.serif(@fontsize: 15px) {
+	font-family: @serif!important;
+	font-size: @fontsize!important;
+}
+
+
+
+@headerTitleFont: @cursive;
+@headerFont: 			@cursive;
+@subHeaderFont: 	@deco;
+@menuFont: 				@deco;
+@contentFont: 		@serif;
+@sbFont: 					@deco;
+@footerCopyFont: 	@deco;
